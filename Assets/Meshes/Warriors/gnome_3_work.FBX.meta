@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 2068b2cae5e6e25428ce2a9452958a6e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bone466
+    100002: Bone467
+    100004: Bone468
+    100006: Bone469
+    100008: Bone470
+    100010: Bone471
+    100012: Bone472
+    100014: Bone473
+    100016: Bone474
+    100018: Bone475
+    100020: Bone476
+    100022: Bone477
+    100024: Bone478
+    100026: Bone479
+    100028: Bone480
+    100030: Bone481
+    100032: Bone482
+    100034: Bone483
+    100036: gnome004
+    100038: //RootNode
+    100040: Bone420
+    100042: Bone421
+    100044: Bone422
+    100046: Bone423
+    100048: Bone424
+    100050: Bone425
+    100052: Bone426
+    100054: Bone427
+    100056: Bone428
+    100058: Bone429
+    100060: Bone430
+    100062: Bone431
+    100064: Bone432
+    100066: Bone433
+    100068: Bone434
+    100070: Bone435
+    100072: Bone436
+    100074: Bone437
+    400000: Bone466
+    400002: Bone467
+    400004: Bone468
+    400006: Bone469
+    400008: Bone470
+    400010: Bone471
+    400012: Bone472
+    400014: Bone473
+    400016: Bone474
+    400018: Bone475
+    400020: Bone476
+    400022: Bone477
+    400024: Bone478
+    400026: Bone479
+    400028: Bone480
+    400030: Bone481
+    400032: Bone482
+    400034: Bone483
+    400036: gnome004
+    400038: //RootNode
+    400040: Bone420
+    400042: Bone421
+    400044: Bone422
+    400046: Bone423
+    400048: Bone424
+    400050: Bone425
+    400052: Bone426
+    400054: Bone427
+    400056: Bone428
+    400058: Bone429
+    400060: Bone430
+    400062: Bone431
+    400064: Bone432
+    400066: Bone433
+    400068: Bone434
+    400070: Bone435
+    400072: Bone436
+    400074: Bone437
+    2100000: No Name
+    4300000: gnome004
+    7400000: gnome_3_work
+    9500000: //RootNode
+    13700000: gnome004
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: gnome_3_work
+      takeName: Untitled
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.8135444
+        functionName: SendDamage
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

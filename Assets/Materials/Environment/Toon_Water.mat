@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Toon_Water
+  m_Shader: {fileID: 4800000, guid: 0a44c66eabe7bb040b88c8b4880b184a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Foam:
+        m_Texture: {fileID: 2800000, guid: fbe4a1b98373bf54788204db9bf04e2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Float0: 1.42
+    - _Float1: 0.7
+    - _Float3: -3.51
+    - _Foam1Tiling: 1
+    - _Foam2Tiling: 0.5
+    - _NoisePower: 1
+    - _NoiseTiling: 0.23
+    - _VertexOffset: 0.0005
+    - __dirty: 0
+    m_Colors:
+    - _FoamColor: {r: 0.2091492, g: 0.9433962, b: 0.7685754, a: 0}
+    - _WaterColor: {r: 0.4308473, g: 0.4669504, b: 0.8867924, a: 0}

@@ -1,0 +1,183 @@
+Clash Engine is a complete project that mimics the familiar genre of games in full 3D.
+At the beginning, the user builds walls, the configuration of protective and economic objects.
+After that, hires characters to attack. Then the process of the game itself begins - the battle.
+All characters and buildings have 2-3 levels of strength.
+The main building is the owner's house, which must be protected by all means.
+
+
+Supported Platforms
+    PC
+
+
+Asset contains
+    1. Menu
+        * resource menu
+        * menu for building buildings
+        * menu for building characters
+        * building upgrade menu
+        * ability to add your own buildings and characters to the menu
+        * building removal tool
+
+    2. Buildings
+        * save system
+        * fence construction system
+        * the possibility of upgrading buildings
+        * building construction animation
+        * large start map
+        * customizability of building duration
+        * grid for building
+        * forest and decor objects
+        * the forest is cut down during the construction of buildings
+        * guns can attack
+
+    3. Warriors
+        * artificial intelligence
+        * the ability to upgrade characters
+        * animated
+
+    4. Control system
+        * camera control - rotate, zoom, move
+ 
+    5. Other
+        * 155 objects and 54 animations
+        * toon shader
+        * toon water shader
+        * particles
+        * post processes
+        * all objects are made through prefabs, which will make them easy to upgrade ones
+
+
+3D models:
+    Buildings (155 objects total):
+        3 kind of fence/wall allows you to build any shape
+        artillery 2 levels
+        barracks  2 levels
+        bastion 2 levels
+        boiler 2 levels
+        16 kind of ground\wall tiles
+        coffer 2 levels
+        craft building 2 levels
+        drill 2 levels
+        drill_base
+        energy_station 2 levels
+        farm 2 levels
+        generator 3 levels
+        lord hause 2 levels
+        magician house 2 levels
+        military tower 2 levels
+        mine 2 levels
+        mine base
+        mortar 2 levels
+        repair 2 levels
+        shooter 2 levels
+        11 kind of stones\rocks
+        36 kind of trees, bushes
+        weapon 2 levels
+        well 2 levels
+        building objects group 1x1, 2x2, 3x3
+        palette
+
+    Characters:
+        gnome 3 levels
+        golem 3 levels
+        elf 2 levels
+        magician 2 levels
+        orc 2 levels
+        dragon\basilisk 
+
+        all characters becides golem_3 own go\fly, stand, dead animations
+        gnome_3 contains work animation, other characters contains attack animations
+        elves contains run animation
+
+        albatros,crow is passive characters
+
+
+3850 lines of code were written for the asset. Hundreds of hours of time.
+It would cost thousands of dollars to fully develop such a product.
+
+
+All models have ID cards, which makes it easy to change their color.
+The asset contains the initial palette of vertex-color values.
+Buildings contain 2-7K quads, characters 1.5-4K quads, except for golems (9K).
+Models are unwrapped with minimal use of overlaps, most of the sweeps are unique.
+
+
+All parameters of buildings and characters are adjustable: price, construction time, attack, life, etc.
+
+
+Each warrior has his own strategic mission - tanks, damage dealers, rushers.
+Artificial intelligence of warriors finds a target, reaches it and attacks. If the target is covered by a fence, then either bypasses it or breaks through the wall.
+Warriors can both move on the ground and fly. They can be both melee and ranger.
+
+
+The cannons are attacking the warriors. Configurable to attack unnoticeable and aerial opponents. They have unique types of attacks.
+
+
+Load
+    Shadows
+        600k tris - 600 batches
+    No shadows
+        150k tris - 150 batches
+
+
+Control
+    Move - W / S / A / D - left mouse drag
+	Rotate - Q / E - middle mouse
+	Scale - R / E
+	Choose building in menu - left mouse double click
+	Rotate building - right mouse click
+
+
+To create a building prefab you need:
+1. Add the BuildingProperties, BoxCollider and NavMeshObstacle script.
+BuildingProperties contains all building parameters.
+2. The prefab must contain Environment, Constraction, Space and HealthBar objects.
+Environment contains building levels.
+Constraction is a prefab for building a building.
+Space contains the dimensions of the building. Each additional 1x1 space is marked with a Space object.
+The HealthBar monitors the life of the building. Must have HeathBar script.
+3. Attach the script GunBehaviour if this building should cause damage.
+
+The created buildings must be entered into the BuildingMenu script in the Buildings parameter.
+Also, the tabs of the building construction menu are configured here.
+
+
+To create a warrior prefab you need:
+1. Hang the script MainAI, NavMeshAgent and WarriorProperties.
+MainAi is responsible for the behavior of artificial intelligence.
+WarriorProperties contains all the parameters of a warrior. Also links to attack particle prefabs.
+2. The prefab must contain Warrior and HealthBarWarrior levels.
+Character levels must have Animator and WarriorSendDamage script.
+The HealthBar controls the character's life. Must have HeathBarWarrior script.
+3. To find the way by the warriors, it is necessary to calculate the navigation in the Navigation tab.
+If a warrior flies, then he does not depend on NavMesh.
+4. Animations of damage and death must contain events (Mesh / Animation / Events).
+For attack animation, the event name is SendDamage.
+For the death animation, the event name is Dead.
+
+The created warriors are added to the StartAttack script in the AllWarriors parameter.
+
+
+Data storage:
+1. Saving is controlled by three scripts BuildingData, SaveDataTrigger and SaveSystem.
+2. SaveDataTrigger hangs on the SaveSystem object. All buildings are added to this script.
+Each building is assigned its own index, which is used to recreate the city when loaded.
+A fence must be assigned to the zero element.
+
+
+The GunRadius object determines the attack range of the guns.
+
+
+Objects on the field are brought into the Forest object, which must be destroyed during the construction of the building.
+
+
+AvQest font by GemFonts 98 / Imitation Warehouse
+
+
+Feedback(suggestions, questions, reports or errors)
+    SomeOneWhoCaresFeedBack @gmail.com
+
+
+My social networks
+    https://www.artstation.com/vrdsgsegs
+    https://twitter.com/iOneWhoCares
