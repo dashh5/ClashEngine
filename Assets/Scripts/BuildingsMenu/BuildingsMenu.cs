@@ -681,7 +681,7 @@ public class BuildingsMenu : MonoBehaviour
             cameraController.target = null;
             cameraController.moveTarget = false;
 
-            warriorsBuy.SetActive(!warriorsBuy.activeSelf);
+            warriorsBuy.SetActive(!warriorsBuy.activeSelf); 
         }
     }
 
