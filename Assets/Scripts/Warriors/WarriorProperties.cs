@@ -20,7 +20,7 @@ public class WarriorProperties : MonoBehaviour
 
 
     public int level = 1;
-    public int HP = 100;
+    public int HP = 1000;
     public int damage = 0;
     public int cost;
     public int costUpgrade;
