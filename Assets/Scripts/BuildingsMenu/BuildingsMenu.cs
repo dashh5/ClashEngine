@@ -11,6 +11,7 @@ public class BuildingsMenu : MonoBehaviour
     [System.Serializable]
     public class BuildingsAsset
     {
+        //emily's change
         public string name;
         public GameObject type;
         public GameObject[] buildings;
