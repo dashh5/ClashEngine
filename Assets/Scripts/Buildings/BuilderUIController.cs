@@ -10,6 +10,7 @@ public class BuilderUIController : MonoBehaviour
         Vector3 relativePos = Camera.main.transform.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos);
         transform.rotation = rotation;
+
     }
 
 }
