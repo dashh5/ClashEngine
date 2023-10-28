@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
+// The 'StartAttack' class is a central manager for initiating and handling attacks 
+// in a Unity game. It manages various game elements, such as warriors, buildings,
+// and UI components, to facilitate an attack scenario. The class handles the setup
+// and teardown of attacks, manages health bars, and cleans up game objects as necessary.
+
 public class StartAttack : MonoBehaviour
 {
 
@@ -68,6 +74,9 @@ public class StartAttack : MonoBehaviour
         this.enabled = false;
     }
 
+
+    // Start the Attack
+
     public void AttackStart()
     {
         CleanArrays();
@@ -123,6 +132,9 @@ public class StartAttack : MonoBehaviour
         for (int i = 0; i < fenceGenerator.allRoads.Count; i++)
             cameraController.whereCanntSpawnWarriors[cameraController.allBuildings.Count + i] = new Vector2(fenceGenerator.allRoads[i].position.x, fenceGenerator.allRoads[i].position.z);
     }
+
+
+    // Stop the Attack
 
     public void StopAttack()
     {

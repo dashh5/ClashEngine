@@ -1,6 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+// The 'DetectTouchMovement' class is a Unity script used to detect and calculate touch 
+// movements for gestures like pinch and turn on a touch screen. This script is meant 
+// to be used in mobile applications or any Unity project that utilizes a touch screen 
+// for input.
+
+// The class has static public variables 'turnAngleDelta', 'turnAngle', 'pinchDistanceDelta', 
+// and 'pinchDistance', which store the angular change, total angle, distance change, and 
+// total distance between two touch points on the screen, respectively.
+
+// The 'Calculate' method performs the calculations and is intended to be called in the 
+// 'LateUpdate' method. It checks if two fingers are touching the screen and if at least 
+// one of them has moved. If these conditions are met, the method calculates the pinch 
+// distance and the turn angle between the two touch points. If the calculated pinch 
+// distance delta or turn angle delta is above the specified minimum thresholds, they 
+// are adjusted by their respective ratios.
+
+// The 'Angle' method calculates the angle between two points in screen space, and adjusts
+// the result based on the cross product to ensure it provides a correct angle in all 
+// quadrants.
+
+// This script does not handle the touch input directly, but rather provides calculations 
+// based on the touch input, which can then be used in other parts of the application to 
+// implement features like zooming, rotating, or panning.
+
 public class DetectTouchMovement : MonoBehaviour
 {
 	const float pinchTurnRatio = Mathf.PI / 2;

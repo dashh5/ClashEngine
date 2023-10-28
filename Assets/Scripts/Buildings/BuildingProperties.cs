@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+// This script defines a class BuildingProperties that is 
+// intended to be attached to a GameObject in a Unity 3D project 
+// to represent the properties of a building within a game. The 
+// class includes properties related to the building's type, level, 
+// health points (HP), damage, cost, attack speed, building time, 
+// and various other attributes. It also contains references to 
+// associated GameObjects and other components.
+
 public class BuildingProperties : MonoBehaviour
 {
 

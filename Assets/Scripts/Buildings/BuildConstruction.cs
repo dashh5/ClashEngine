@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script is for a building construction mechanic in a Unity game.
+// It manages the visual and functional aspects of constructing a building,
+// including timing, rendering, and state management. The building process
+// is visually represented and managed through a coroutine, and upon 
+// completion, certain game objects and components are activated or 
+// deactivated to reflect the building's new state. Optional rendering 
+// effects can be included for additional visual feedback during 
+// construction
+
 public class BuildConstruction : MonoBehaviour
 {
 
@@ -97,3 +106,4 @@ public class BuildConstruction : MonoBehaviour
         yield return null;
     }
 }
+

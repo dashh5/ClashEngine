@@ -4,6 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// The 'ControlPanelProperties' class is a Unity script used to manage and display properties
+// of an in-game object within a control panel UI. This includes displaying object name, 
+// health points (HP), damage, range, and upgrade cost. The class also integrates with 
+// other game components such as 'CameraController', 'PlayerProperty', and 'BuildingsMenu' to 
+// facilitate additional game functionalities.
+
+// The 'Control' method is used to update the control panel UI based on the properties of 
+// the selected game object. It updates text fields, scrollbar sizes, and visibility of 
+// UI elements based on the input parameters and properties of the selected object.
+
+// The 'BuyUpgrade' method is used to handle the logic for buying an upgrade for the currently
+//  selected object. It checks if the player has enough resources, deducts the cost,
+//  updates the object's properties, starts the building process, and triggers any 
+// additional calculations required for upgraded objects.
+
+// The 'ExtensionMethods' class provides an additional utility method 'Remap', used for mapping
+// a value from one range to another, which is used in updating scrollbar sizes in the 
+// control panel.
+
+
 public class ControlPanelProperties : MonoBehaviour
 {
     public TextMeshProUGUI objectName;
