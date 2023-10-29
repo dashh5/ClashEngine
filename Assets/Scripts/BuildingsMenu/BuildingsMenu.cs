@@ -11,6 +11,7 @@ public class BuildingsMenu : MonoBehaviour
     [System.Serializable]
     public class BuildingsAsset
     {
+        //emily's change
         public string name;
         public GameObject type;
         public GameObject[] buildings;
@@ -80,6 +81,10 @@ public class BuildingsMenu : MonoBehaviour
     int currentIndex = 0;
     int currentIndex2 = 0;
     int currentIndex3 = 0;
+
+    //NEW:
+    public Text CoinsText; //shows number of coins
+    public Text XPText; //shows XP
 
     private void Awake()
     {
@@ -326,7 +331,7 @@ public class BuildingsMenu : MonoBehaviour
 
     public void BuyWarrior(int warriorIndex, int cost, Transform textCount, Scrollbar timerScrollbar, float timerBuying)
     {
-        if (PlayerProperty.extractPlayer - cost > 0)
+        if (PlayerProperty.XP - cost > 0)
         {
             warriorsQueue.Add(warriorIndex);
             warriorsQueueTimer.Add(timerBuying);
@@ -334,7 +339,7 @@ public class BuildingsMenu : MonoBehaviour
 
             textCountBuyArray[warriorsQueue[warriorsQueue.Count - 1]].text = 'x' + queueCurrentWarrior[warriorsQueue[warriorsQueue.Count - 1]].ToString();
 
-            PlayerProperty.extractPlayer -= cost;
+            PlayerProperty.XP -= cost;
             playerProperty.CountResources();
         }
     }

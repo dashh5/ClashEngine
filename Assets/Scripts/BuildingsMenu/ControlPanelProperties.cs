@@ -88,9 +88,9 @@ public class ControlPanelProperties : MonoBehaviour
 
     public void BuyUpgrade()
     {
-        if(PlayerProperty.goldenPlayer - buyCost >= 0)
+        if(PlayerProperty.coins - buyCost >= 0)
         {
-            PlayerProperty.goldenPlayer -= buyCost;
+            PlayerProperty.coins -= buyCost;
             playerProperty.CountResources();
 
 

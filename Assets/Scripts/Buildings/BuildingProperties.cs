@@ -22,7 +22,7 @@ public class BuildingProperties : MonoBehaviour
     {
         None = 0,
         Mine = 1,
-        Barracks = 2,
+        Gym = 2,
         Bastion = 3,
         Boiler = 4,
         Coffer = 5,
@@ -30,9 +30,9 @@ public class BuildingProperties : MonoBehaviour
         Dril = 7,
         Farm = 8,
         Generator = 9,
-        LordHouse = 10,
-        MagicianHouse = 11,
-        Repairs = 12,
+        MainHouse = 10,
+        Library = 11,
+        Lounge = 12,
         Well = 13
     }
     public InfrastructureType infrastructureType;
@@ -107,7 +107,7 @@ public class BuildingProperties : MonoBehaviour
         //---------INFRASTRUCTURE
         if (type == BuildingType.Infrastructure)
         {
-            if (infrastructureType == InfrastructureType.LordHouse)
+            if (infrastructureType == InfrastructureType.MainHouse)
             {
                 maxHP = 5000;
 
@@ -124,7 +124,7 @@ public class BuildingProperties : MonoBehaviour
                 else if (level == 3) buildingTime = 20;
             }
 
-            if (infrastructureType == InfrastructureType.Barracks)
+            if (infrastructureType == InfrastructureType.Gym)
             {
                 maxHP = 700;
 
@@ -236,7 +236,7 @@ public class BuildingProperties : MonoBehaviour
                 else if (level == 2) buildingTime = 15;
             }
 
-            if (infrastructureType == InfrastructureType.MagicianHouse)
+            if (infrastructureType == InfrastructureType.Library)
             {
                 maxHP = 700;
 
@@ -267,7 +267,7 @@ public class BuildingProperties : MonoBehaviour
                 else if (level == 2) buildingTime = 15;
             }
 
-            if (infrastructureType == InfrastructureType.Repairs)
+            if (infrastructureType == InfrastructureType.Lounge)
             {
                 maxHP = 500;
 
